@@ -10,6 +10,7 @@ namespace TechJobs.Controllers
         {
             ViewBag.columns = ListController.columnChoices;
             ViewBag.title = "Search";
+            ViewBag.searchType = "all";
             return View();
         }
 
@@ -29,6 +30,7 @@ namespace TechJobs.Controllers
             }
             ViewBag.columns = ListController.columnChoices;
             ViewBag.title = "Search";
+            ViewBag.searchType = searchType;
             return View("Index");
         }
 
